@@ -2,7 +2,16 @@ const express = require('express')
 const morgan = require('morgan');
 const { engine } = require('express-handlebars');
 const path = require('path');
+// const sass = require('node-sass');
+// const fs = require('fs');
 
+// sass.render({
+//   file: __dirname + '/resources/scss/app.scss',
+//   outputStyle: 'compressed'
+// }, (err, result) => {
+//   if (err) throw err;
+//   fs.writeFileSync(__dirname + '/public/css/styles.css', result.css);
+// });
 
 const app = express()
 const port = 3000

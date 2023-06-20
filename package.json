@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon --inspect src/index.js",
+    "watch": "sass --watch src/resources/scss:src/public/css --no-source-map",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,9 +23,13 @@
   },
   "homepage": "https://github.com/Nguyenhuutuancsgl/hospitalbook#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "morgan": "^1.10.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.22",
+    "sass": "^1.63.4"
   }
 }
